@@ -1,0 +1,177 @@
+title: "Dominican Republic 2016 budget"
+dataset-name: dominican_republic_2016_budget
+resource-name: dominican_republic_2016_budget
+private: False
+owner-id: 667df60aa07c34260eae9b55b2778712
+
+sources:
+- url: ./Bases de datos 2016.xlsx.gz
+  compression: gzip
+  format: xlsx
+  sheet: 2
+  constants:
+    Ciclo: 2016
+
+# Didn't know how to map these:
+# OBJETO TIPO
+# CONCEPTO
+# CUENTA
+# SUBCUENTA
+
+# Also, CAPÍTULO2 > SUBCAPÍTULO > UND EJECUTORA > INST. REC
+# I mapped these to the administrative classification - is that correct?
+
+fields:
+# Fiscal year
+- header: Ciclo
+  title: Ciclo
+  options: {}
+  columnType: date:fiscal-year
+
+# Activity
+- header: PROGRAMA2
+  title: PROGRAMA2
+  options: {}
+  columnType: activity:generic:program:code
+
+- header: SUBPROGRAMA
+  title: SUBPROGRAMA
+  options: {}
+  columnType: activity:generic:subprogram:code
+
+
+# Functional Classification
+- header: FINALIDAD
+  title: FINALIDAD
+  options: {}
+  columnType: functional-classification:generic:level1:code
+
+- header: FUNCION
+  title: FUNCION
+  options: {}
+  columnType: functional-classification:generic:level2:code
+
+- header: SUBFUNCION
+  title: SUBFUNCION
+  options: {}
+  columnType: functional-classification:generic:level3:code
+
+# Economic Classification
+- header: ECONOMICA_TIPO
+  title: ECONOMICA - TIPO
+  aliases:
+    -  ECONOMICA - TIPO
+  options: {}
+  columnType: economic-classification:generic:level1:code
+
+- header: ECON_TITULO
+  title: ECON TITULO
+  aliases:
+    - ECON TITULO
+  options: {}
+  columnType: economic-classification:generic:level2:code
+
+- header: ECON_SUBTITULO
+  title: ECON SUBTITULO
+  aliass:
+    - ECON SUBTITULO
+  options: {}
+  columnType: economic-classification:generic:level3:code
+
+- header: ECON_GRUPO
+  title: ECON GRUPO
+  aliases:
+    - ECON GRUPO
+  options: {}
+  columnType: economic-classification:generic:level4:code
+
+- header: ECON_SUBGRUPO
+  title: ECON SUBGRUPO
+  aliases:
+    -  ECON SUBGRUPO
+  options: {}
+  columnType: economic-classification:generic:level5:code
+
+# Geo
+- header: REGION
+  title: REGION
+  options: {}
+  columnType: geo-source:target:level1:code
+
+- header: PROVINCIA
+  title: PROVINCIA
+  options: {}
+  columnType: geo-source:target:level2:code
+
+# Financial Source
+- header: FUENTES_FINANCIAMIENTO2
+  title: FUENTES FINANCIAMIENTO2
+  aliases:
+    - FUENTES FINANCIAMIENTO2
+  options: {}
+  columnType: fin-source:generic:level1:code
+
+- header: FUENTE_ESPECIFICA
+  title: FUENTE ESPECÍFICA
+  aliases:
+    - FUENTE ESPECÍFICA
+  options: {}
+  columnType: fin-source:generic:level2:code
+
+# Administrative Classification
+- header: CAPITULO2
+  title: CAPÍTULO2
+  aliases:
+    - CAPÍTULO2
+  options: {}
+  columnType: administrative-classification:generic:level1:code
+
+- header: SUBCAPITULO
+  title: SUBCAPÍTULO
+  aliases:
+    - SUBCAPÍTULO
+  options: {}
+  columnType: administrative-classification:generic:level2:code
+
+- header: UND_EJECUTORA
+  title: UND EJECUTORA
+  aliases:
+    - UND EJECUTORA
+  options: {}
+  columnType: administrative-classification:generic:level3:code
+
+- header: INST_REC
+  title: INST. REC
+  aliases:
+    - INST. REC
+  options: {}
+  columnType: administrative-classification:generic:level4:code
+
+# Measures
+- header: Presupuesto_Aprobado
+  title: Presupuesto Aprobado
+  aliases:
+    - Presupuesto Aprobado
+  options:
+    currency: DOP
+  columnType: value
+
+- header: Presupuesto_Reformulado_Aprobado
+  title: Presupuesto Reformulado Aprobado
+  aliases:
+    - Presupuesto Reformulado Aprobado
+  options:
+    currency: DOP
+  columnType: value
+
+- header: Devengado_Aprobado
+  title: Devengado Aprobado
+  aliases:
+    - Devengado Aprobado
+  options:
+    currency: DOP
+  columnType: value
+
+
+
+deduplicate: yes
