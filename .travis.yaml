@@ -1,0 +1,10 @@
+language: node_js
+
+node_js:
+  - 10
+
+install:
+  - npm install -g pajv
+
+script:
+  - pajv -s schema.json -d "**/fiscal.source-spec.{yaml,yml}"
