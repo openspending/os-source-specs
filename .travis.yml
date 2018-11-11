@@ -7,4 +7,3 @@ language: node_js
   - pajv -s schema.json -d "**/fiscal.source-spec.{yaml,yml}"
  notifications:
   webhooks: https://www.travisbuddy.com/
-  on_success: never
