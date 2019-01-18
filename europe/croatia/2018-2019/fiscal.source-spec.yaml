@@ -1,0 +1,161 @@
+title: "Croatia Budget Plan 2018-2020"
+dataset-name: croatia-budget-plan-2018-2020
+resource-name: croatia-budget-plan-2018-2020
+private: False
+owner-id: 667df60aa07c34260eae9b55b2778712
+revision: 2
+
+sources:
+- url: ../T0753 Izvoz podataka za OpenSpending 2018-2020.xlsx
+  sheet: 3
+  format: xlsx
+  headers:
+    - admin1_code
+    - admin1_label
+    - admin2_code
+    - admin2_label
+    - activity1_code
+    - activity1_label
+    - activity2_code
+    - activity2_label
+    - activity3_code
+    - activity3_label
+    - func1_code
+    - func1_label
+    - fin_source_code
+    - fin_source_label
+    - econ1_code
+    - econ1_label
+    - econ2_code
+    - econ2_label
+    - econ3_code
+    - econ3_label
+    - plan_2018
+    - plan_2019
+    - plan_2020
+  skip_rows: 2
+
+
+fields:
+
+
+# Fiscal year
+- header: Year
+  options: {}
+  columnType: date:fiscal-year
+
+
+
+# Administrative Classification
+- header: admin1_code
+  title: "Razdjel (O1) - Tekući proračun"
+  options: {}
+  columnType: administrative-classification:generic:level1:code
+
+- header: admin1_label
+  options: {}
+  columnType: administrative-classification:generic:level1:label
+
+- header: admin2_code
+  label: "Glava (O2) - Tekući proračun"
+  options: {}
+  columnType: administrative-classification:generic:level2:code
+
+- header: admin2_label
+  options: {}
+  columnType: administrative-classification:generic:level2:label
+
+
+
+# Activity
+- header: activity1_code
+  title: "Nac. prog. (P1)"
+  options: {}
+  columnType: activity:generic:program:code
+
+- header: activity1_label
+  options: {}
+  columnType: activity:generic:program:label
+
+- header: activity2_code
+  title: "Program (P2)"
+  options: {}
+  columnType: activity:generic:subprogram:code
+
+- header: activity2_label
+  options: {}
+  columnType: activity:generic:subprogram:label
+
+- header: activity3_code
+  title: "Korisnik proračuna"
+  options: {}
+  columnType: activity:generic:project:code
+
+- header: activity3_label
+  options: {}
+  columnType: activity:generic:project:label
+
+
+
+# Functional Classification
+- header: func1_code
+  title: "Funk. podr."
+  options: {}
+  columnType: functional-classification:generic:level1:code
+
+- header: func1_label
+  options: {}
+  columnType: functional-classification:generic:level1:label
+
+
+# Financial Source
+- header: fin_source_code
+  title: "Izvor financiranja (I2)"
+  options: {}
+  columnType: fin-source:generic:level1:code
+
+- header: fin_source_label
+  options: {}
+  columnType: fin-source:generic:level1:label
+
+
+
+# Economic Classification
+- header: econ1_code
+  title: "Razred stavke (E1)"
+  options: {}
+  columnType: economic-classification:generic:level1:code
+
+- header: econ1_label
+  options: {}
+  columnType: economic-classification:generic:level1:label
+
+- header: econ2_code
+  title: "Skupina stavke (E2)"
+  options: {}
+  columnType: economic-classification:generic:level2:code
+
+- header: econ2_label
+  options: {}
+  columnType: economic-classification:generic:level2:label
+
+- header: econ3_code
+  title: "Podskup. stavke (E3)"
+  options: {}
+  columnType: economic-classification:generic:level3:code
+
+- header: econ3_label
+  options: {}
+  columnType: economic-classification:generic:level3:label
+
+
+
+measures:
+  currency: HRK
+  mapping:
+    plan_2018:
+      Year: "2018"
+    plan_2019:
+      Year: "2019"
+    plan_2020:
+      Year: "2020"

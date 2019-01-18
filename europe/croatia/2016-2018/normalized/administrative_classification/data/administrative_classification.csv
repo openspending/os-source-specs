@@ -1,0 +1,181 @@
+_fdp__id_,admin1_code,admin1_label,admin2_code,admin2_label
+1,010,HRVATSKI SABOR,01005,Hrvatski sabor
+2,012,DRŽAVNO IZBORNO POVJERENSTVO REPUBLIKE HRVATSKE,01205,Državno izborno povjerenstvo Republike Hrvatske
+3,013,URED PREDSJEDNIKA REPUBLIKE HRVATSKE PO PRESTANKU OBNAŠANJA DUŽNOSTI,01305,Ured predsjednika Republike Hrvatske po prestanku obnašanja dužnosti
+4,015,URED PREDSJEDNICE REPUBLIKE HRVATSKE,01505,Ured Predsjednika Republike Hrvatske
+5,017,USTAVNI SUD REPUBLIKE HRVATSKE,01705,Ustavni sud Republike Hrvatske
+6,018,AGENCIJA ZA ZAŠTITU TRŽIŠNOG NATJECANJA,01805,Agencija za zaštitu tržišnog natjecanja
+7,020,VLADA REPUBLIKE HRVATSKE,02005,Vlada Republike Hrvatske
+8,020,VLADA REPUBLIKE HRVATSKE,02006,Ured predsjednika Vlade Republike Hrvatske
+9,020,VLADA REPUBLIKE HRVATSKE,02010,Ured za udruge
+10,020,VLADA REPUBLIKE HRVATSKE,02015,Ured zastupnika Republike Hrvatske pred Europskim sudom za ljudska prava
+11,020,VLADA REPUBLIKE HRVATSKE,02021,Stručna služba Savjeta za nacionalne manjine
+12,020,VLADA REPUBLIKE HRVATSKE,02030,Ured za zakonodavstvo
+13,020,VLADA REPUBLIKE HRVATSKE,02035,Ured za opće poslove Hrvatskoga sabora i Vlade Republike Hrvatske
+14,020,VLADA REPUBLIKE HRVATSKE,02042,Ured za protokol
+15,020,VLADA REPUBLIKE HRVATSKE,02044,Ured Vlade Republike Hrvatske za unutarnju reviziju
+16,020,VLADA REPUBLIKE HRVATSKE,02046,Direkcija za korištenje službenih zrakoplova
+17,020,VLADA REPUBLIKE HRVATSKE,02087,Ured za ljudska prava i prava nacionalnih manjina
+18,020,VLADA REPUBLIKE HRVATSKE,02090,Ured za suzbijanje zlouporabe droga
+19,020,VLADA REPUBLIKE HRVATSKE,02091,Ured Komisije za odnose s vjerskim zajednicama
+20,020,VLADA REPUBLIKE HRVATSKE,02092,Ured za ravnopravnost spolova
+21,020,VLADA REPUBLIKE HRVATSKE,02097,Digitalni informacijsko-dokumentacijski ured
+22,020,VLADA REPUBLIKE HRVATSKE,02099,Ured za razminiranje
+23,025,MINISTARSTVO FINANCIJA,02505,Ministarstvo financija
+24,025,MINISTARSTVO FINANCIJA,02506,Ministarstvo financija - ostali izdaci države
+25,025,MINISTARSTVO FINANCIJA,02510,Carinska uprava
+26,025,MINISTARSTVO FINANCIJA,02515,Porezna uprava
+27,025,MINISTARSTVO FINANCIJA,02540,Agencija za reviziju sustava provedbe programa Europske unije
+28,025,MINISTARSTVO FINANCIJA,02545,Fond za naknadu oduzete imovine
+29,025,MINISTARSTVO FINANCIJA,49286,Odbor za standarde financijskog izvještavanja
+30,025,MINISTARSTVO FINANCIJA,49294,Odbor za javni nadzor revizije
+31,028,SREDIŠNJI DRŽAVNI URED ZA SREDIŠNJU JAVNU NABAVU,02805,Državni ured za središnju javnu nabavu
+32,029,DRŽAVNI URED ZA UPRAVLJANJE DRŽAVNOM IMOVINOM,02905,Državni ured za upravljanje državnom imovinom
+33,030,MINISTARSTVO OBRANE,03005,Ministarstvo obrane
+34,032,SREDIŠNJI DRŽAVNI URED ZA HRVATE IZVAN REPUBLIKE HRVATSKE,03205,Državni ured za Hrvate izvan Republike Hrvatske
+35,032,SREDIŠNJI DRŽAVNI URED ZA HRVATE IZVAN REPUBLIKE HRVATSKE,03210,Hrvatska matica iseljenika
+36,033,SREDIŠNJI DRŽAVNI URED ZA OBNOVU I STAMBENO ZBRINJAVANJE,03305,Državni ured za obnovu i stambeno zbrinjavanje
+37,034,SREDIŠNJI DRŽAVNI URED ZA RAZVOJ DIGITALNOG DRUŠTVA,03405,Središnji državni ured za razvoj digitalnog društva
+38,036,SREDIŠNJI DRŽAVNI URED ZA ŠPORT,03605,Središnji državni ured za šport
+39,040,MINISTARSTVO UNUTARNJIH POSLOVA,04005,Ministarstvo unutarnjih poslova
+40,040,MINISTARSTVO UNUTARNJIH POSLOVA,04035,Hrvatski centar za razminiranje
+41,040,MINISTARSTVO UNUTARNJIH POSLOVA,04040,Agencija za prostore ugrožene eksplozivnom atmosferom
+42,040,MINISTARSTVO UNUTARNJIH POSLOVA,21908,Hrvatska vatrogasna zajednica
+43,040,MINISTARSTVO UNUTARNJIH POSLOVA,28305,Državna uprava za zaštitu i spašavanje
+44,041,MINISTARSTVO HRVATSKIH BRANITELJA,04105,Ministarstvo branitelja
+45,041,MINISTARSTVO HRVATSKIH BRANITELJA,04110,"Javna ustanova ""Memorijalni centar Domovinskog rata Vukovar"""
+46,041,MINISTARSTVO HRVATSKIH BRANITELJA,04115,Dom hrvatskih veterana
+47,048,MINISTARSTVO VANJSKIH I EUROPSKIH POSLOVA,04805,Ministarstvo vanjskih i europskih poslova
+48,049,"MINISTARSTVO GOSPODARSTVA, PODUZETNIŠTVA I OBRTA",04905,Ministarstvo gospodarstva
+49,049,"MINISTARSTVO GOSPODARSTVA, PODUZETNIŠTVA I OBRTA",04910,Ravnateljstvo za robne zalihe
+50,049,"MINISTARSTVO GOSPODARSTVA, PODUZETNIŠTVA I OBRTA",04970,Državni zavod za mjeriteljstvo
+51,049,"MINISTARSTVO GOSPODARSTVA, PODUZETNIŠTVA I OBRTA",04980,Hrvatski zavod za norme
+52,049,"MINISTARSTVO GOSPODARSTVA, PODUZETNIŠTVA I OBRTA",04985,Hrvatska akreditacijska agencija
+53,049,"MINISTARSTVO GOSPODARSTVA, PODUZETNIŠTVA I OBRTA",04990,"Hrvatska agencija za malo gospodarstvo, inovacije i investicije, HAMAG-BICRO"
+54,049,"MINISTARSTVO GOSPODARSTVA, PODUZETNIŠTVA I OBRTA",04995,Hrvatski centar za zadružno poduzetništvo
+55,049,"MINISTARSTVO GOSPODARSTVA, PODUZETNIŠTVA I OBRTA",44389,Agencija za opremu pod tlakom
+56,049,"MINISTARSTVO GOSPODARSTVA, PODUZETNIŠTVA I OBRTA",47641,Agencija za investicije i konkurentnost
+57,049,"MINISTARSTVO GOSPODARSTVA, PODUZETNIŠTVA I OBRTA",47797,Hrvatska agencija za obvezne zalihe nafte i naftnih derivata
+58,049,"MINISTARSTVO GOSPODARSTVA, PODUZETNIŠTVA I OBRTA",49235,Centar za praćenje poslovanja energetskog sektora i investicija
+59,051,MINISTARSTVO PODUZETNIŠTVA I OBRTA,05105,Ministarstvo poduzetništva i obrta
+60,051,MINISTARSTVO PODUZETNIŠTVA I OBRTA,05110,"Hrvatska agencija za malo gospodarstvo, inovacije  i investicije, HAMAG-BICRO"
+61,051,MINISTARSTVO PODUZETNIŠTVA I OBRTA,05115,Hrvatski centar za zadružno poduzetništvo
+62,052,POVJERENSTVO ZA ODLUČIVANJE O SUKOBU INTERESA,05205,Povjerenstvo za odlučivanje o sukobu interesa
+63,054,MINISTARSTVO DRŽAVNE IMOVINE,05405,Ministarstvo državne imovine
+64,055,MINISTARSTVO KULTURE,01046,Ansambl Lado
+65,055,MINISTARSTVO KULTURE,05505,Ministarstvo kulture
+66,055,MINISTARSTVO KULTURE,05535,Arhivi
+67,055,MINISTARSTVO KULTURE,05540,Muzeji i galerije
+68,055,MINISTARSTVO KULTURE,22339,Hrvatski restauratorski zavod
+69,055,MINISTARSTVO KULTURE,23585,Hrvatska knjižnica za slijepe
+70,055,MINISTARSTVO KULTURE,25878,Hrvatsko narodno kazalište
+71,055,MINISTARSTVO KULTURE,44926,Hrvatski audiovizualni centar
+72,055,MINISTARSTVO KULTURE,45189,Međunarodni centar za podvodnu arheologiju
+73,055,MINISTARSTVO KULTURE,49075,Agencija za elektroničke medije
+74,060,MINISTARSTVO POLJOPRIVREDE,06005,Ministarstvo poljoprivrede
+75,060,MINISTARSTVO POLJOPRIVREDE,06025,Hrvatska agencija za hranu
+76,060,MINISTARSTVO POLJOPRIVREDE,06030,"Agencija za plaćanja u poljoprivredi, ribarstvu i ruralnom razvoju"
+77,060,MINISTARSTVO POLJOPRIVREDE,06035,"Hrvatski centar za poljoprivredu, hranu i selo"
+78,060,MINISTARSTVO POLJOPRIVREDE,06040,Agencija za poljoprivredno zemljište
+79,060,MINISTARSTVO POLJOPRIVREDE,06045,Hrvatska poljoprivredna agencija
+80,060,MINISTARSTVO POLJOPRIVREDE,06050,Savjetodavna služba
+81,061,MINISTARSTVO REGIONALNOGA RAZVOJA I FONDOVA EUROPSKE UNIJE,06105,Ministarstvo regionalnoga razvoja i fondova Europske unije
+82,061,MINISTARSTVO REGIONALNOGA RAZVOJA I FONDOVA EUROPSKE UNIJE,06110,Fond za obnovu i razvoj Grada Vukovara
+83,061,MINISTARSTVO REGIONALNOGA RAZVOJA I FONDOVA EUROPSKE UNIJE,06120,Agencija za regionalni razvoj Republike Hrvatske
+84,061,MINISTARSTVO REGIONALNOGA RAZVOJA I FONDOVA EUROPSKE UNIJE,06125,Središnja agencija za financiranje i ugovaranje programa i projekata Europske unije
+85,065,"MINISTARSTVO MORA, PROMETA I INFRASTRUKTURE",06505,"Ministarstvo pomorstva, prometa i infrastrukture"
+86,065,"MINISTARSTVO MORA, PROMETA I INFRASTRUKTURE",06545,Agencija za obalni linijski promet
+87,065,"MINISTARSTVO MORA, PROMETA I INFRASTRUKTURE",06550,Agencija za vodne putove
+88,065,"MINISTARSTVO MORA, PROMETA I INFRASTRUKTURE",06560,Hrvatski hidrografski institut
+89,065,"MINISTARSTVO MORA, PROMETA I INFRASTRUKTURE",45228,Agencija za sigurnost željezničkog prometa
+90,065,"MINISTARSTVO MORA, PROMETA I INFRASTRUKTURE",48031,"Agencija za istraživanje nesreća u zračnom, pomorskom i željezničkom prometu"
+91,065,"MINISTARSTVO MORA, PROMETA I INFRASTRUKTURE",49083,Hrvatska agencija za civilno zrakoplovstvo
+92,076,MINISTARSTVO GRADITELJSTVA I PROSTORNOGA UREĐENJA,07605,Ministarstvo graditeljstva i prostornoga uređenja
+93,076,MINISTARSTVO GRADITELJSTVA I PROSTORNOGA UREĐENJA,07610,Hrvatski zavod za prostorni razvoj
+94,076,MINISTARSTVO GRADITELJSTVA I PROSTORNOGA UREĐENJA,07615,Agencija za ozakonjenje nezakonito izgrađenih zgrada
+95,076,MINISTARSTVO GRADITELJSTVA I PROSTORNOGA UREĐENJA,07620,Agencija za pravni promet i posredovanje nekretninama
+96,076,MINISTARSTVO GRADITELJSTVA I PROSTORNOGA UREĐENJA,07625,Državna geodetska uprava
+97,076,MINISTARSTVO GRADITELJSTVA I PROSTORNOGA UREĐENJA,07630,Agencija za obnovu osječke Tvrđe
+98,077,MINISTARSTVO ZAŠTITE OKOLIŠA I ENERGETIKE,07705,Ministarstvo zaštite okoliša i prirode
+99,077,MINISTARSTVO ZAŠTITE OKOLIŠA I ENERGETIKE,07710,Agencija za zaštitu okoliša
+100,077,MINISTARSTVO ZAŠTITE OKOLIŠA I ENERGETIKE,07715,Nacionalni parkovi i parkovi prirode
+101,077,MINISTARSTVO ZAŠTITE OKOLIŠA I ENERGETIKE,07720,Državni hidrometeorološki zavod
+102,077,MINISTARSTVO ZAŠTITE OKOLIŠA I ENERGETIKE,07725,Državni zavod za zaštitu prirode
+103,077,MINISTARSTVO ZAŠTITE OKOLIŠA I ENERGETIKE,07730,Hrvatska agencija za okoliš i prirodu
+104,077,MINISTARSTVO ZAŠTITE OKOLIŠA I ENERGETIKE,07735,Hrvatska agencija za obvezne zalihe nafte i naftnih derivata
+105,077,MINISTARSTVO ZAŠTITE OKOLIŠA I ENERGETIKE,07740,Centar za praćenje poslovanja energetskog sektora i investicija
+106,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,08005,"Ministarstvo znanosti, obrazovanja i sporta"
+107,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,08006,Sveučilišta i veleučilišta u Republici Hrvatskoj
+108,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,08008,Javni instituti u Republici Hrvatskoj
+109,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,08012,Državni zavod za intelektualno vlasništvo
+110,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,21836,Nacionalna i sveučilišna knjižnica
+111,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,21852,Hrvatska akademska i istraživačka mreža Carnet
+112,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,21869,Leksikografski zavod Miroslav Krleža
+113,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,23665,Sveučilišni računski centar SRCE
+114,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,23962,Agencija za odgoj i obrazovanje
+115,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,38487,Agencija za znanost i visoko obrazovanje
+116,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,40883,Nacionalni centar za vanjsko vrednovanje obrazovanja
+117,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,43335,Agencija za mobilnost i programe Europske unije
+118,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,45871,Hrvatski mjeriteljski institut
+119,080,MINISTARSTVO ZNANOSTI I OBRAZOVANJA,46173,Agencija za strukovno obrazovanje i obrazovanje odraslih
+120,086,MINISTARSTVO RADA I MIROVINSKOGA SUSTAVA,08605,Ministarstvo rada i mirovinskoga sustava
+121,086,MINISTARSTVO RADA I MIROVINSKOGA SUSTAVA,08620,Hrvatski zavod za mirovinsko osiguranje
+122,086,MINISTARSTVO RADA I MIROVINSKOGA SUSTAVA,08625,Hrvatski zavod za zapošljavanje
+123,086,MINISTARSTVO RADA I MIROVINSKOGA SUSTAVA,08635,"Zavod za vještačenje, profesionalnu rehabilitaciju i zapošljavanje osoba s invaliditetom"
+124,086,MINISTARSTVO RADA I MIROVINSKOGA SUSTAVA,08640,Zavod za unapređivanje zaštite na radu
+125,086,MINISTARSTVO RADA I MIROVINSKOGA SUSTAVA,08645,Središnji registar osiguranika
+126,086,MINISTARSTVO RADA I MIROVINSKOGA SUSTAVA,08650,Agencija za osiguranje radničkih potraživanja u slučaju stečaja poslodavca
+127,090,MINISTARSTVO TURIZMA,09005,Ministarstvo turizma
+128,095,MINISTARSTVO UPRAVE,09505,Ministarstvo uprave
+129,095,MINISTARSTVO UPRAVE,09510,Uredi državne uprave u županijama
+130,095,MINISTARSTVO UPRAVE,09515,Državna škola za javnu upravu
+131,096,MINISTARSTVO ZDRAVSTVA,09605,Ministarstvo zdravlja
+132,096,MINISTARSTVO ZDRAVSTVA,23616,Imunološki zavod
+133,096,MINISTARSTVO ZDRAVSTVA,26346,Hrvatski zavod za javno zdravstvo
+134,096,MINISTARSTVO ZDRAVSTVA,26354,Hrvatski zavod za transfuzijsku medicinu
+135,096,MINISTARSTVO ZDRAVSTVA,26379,Klinički bolnički centar Rijeka
+136,096,MINISTARSTVO ZDRAVSTVA,26387,Klinička bolnica Merkur
+137,096,MINISTARSTVO ZDRAVSTVA,26395,Klinički bolnički centar Sestre milosrdnice
+138,096,MINISTARSTVO ZDRAVSTVA,26400,Klinički bolnički centar Osijek
+139,096,MINISTARSTVO ZDRAVSTVA,26418,Klinički bolnički centar Split
+140,096,MINISTARSTVO ZDRAVSTVA,26426,Klinika za ortopediju Lovran
+141,096,MINISTARSTVO ZDRAVSTVA,26459,Klinika za infektivne bolesti dr. Fran Mihaljević
+142,096,MINISTARSTVO ZDRAVSTVA,26563,Hrvatski zavod za zaštitu zdravlja i sigurnost na radu
+143,096,MINISTARSTVO ZDRAVSTVA,26571,Klinička bolnica Dubrava
+144,096,MINISTARSTVO ZDRAVSTVA,38069,Klinički bolnički centar Zagreb
+145,096,MINISTARSTVO ZDRAVSTVA,38655,Dom zdravlja Ministarstva unutarnjih poslova Republike Hrvatske
+146,096,MINISTARSTVO ZDRAVSTVA,41128,Hrvatski zavod za telemedicinu
+147,096,MINISTARSTVO ZDRAVSTVA,43191,Agencija za kvalitetu i akreditaciju u zdravstvu i socijalnoj skrbi
+148,096,MINISTARSTVO ZDRAVSTVA,44573,Hrvatski zavod za hitnu medicinu
+149,096,MINISTARSTVO ZDRAVSTVA,47893,Klinika za dječje bolesti Zagreb
+150,102,"MINISTARSTVO ZA DEMOGRAFIJU, OBITELJ, MLADE I SOCIJALNU POLITIKU",10205,Ministarstvo socijalne politike i mladih
+151,102,"MINISTARSTVO ZA DEMOGRAFIJU, OBITELJ, MLADE I SOCIJALNU POLITIKU",10208,Proračunski  korisnici u socijalnoj skrbi
+152,106,HRVATSKA AKADEMIJA ZNANOSTI I UMJETNOSTI,10605,Hrvatska akademija znanosti i umjetnosti
+153,110,MINISTARSTVO PRAVOSUĐA,11005,Ministarstvo pravosuđa
+154,110,MINISTARSTVO PRAVOSUĐA,11006,Pravosudna akademija
+155,110,MINISTARSTVO PRAVOSUĐA,11010,Zatvori i kaznionice
+156,110,MINISTARSTVO PRAVOSUĐA,11015,Vrhovni sud Republike Hrvatske
+157,110,MINISTARSTVO PRAVOSUĐA,11020,Visoki trgovački sud Republike Hrvatske
+158,110,MINISTARSTVO PRAVOSUĐA,11025,Visoki upravni sud Republike Hrvatske
+159,110,MINISTARSTVO PRAVOSUĐA,11027,Upravni sudovi
+160,110,MINISTARSTVO PRAVOSUĐA,11030,Državno odvjetništvo Republike Hrvatske
+161,110,MINISTARSTVO PRAVOSUĐA,11035,Državnoodvjetničko vijeće
+162,110,MINISTARSTVO PRAVOSUĐA,11036,Državno sudbeno vijeće
+163,110,MINISTARSTVO PRAVOSUĐA,11040,Visoki prekršajni sud Republike Hrvatske
+164,110,MINISTARSTVO PRAVOSUĐA,11045,Županijski sudovi
+165,110,MINISTARSTVO PRAVOSUĐA,11050,Trgovački sudovi
+166,110,MINISTARSTVO PRAVOSUĐA,11055,Županijska državna odvjetništva
+167,110,MINISTARSTVO PRAVOSUĐA,11065,Općinski sudovi
+168,110,MINISTARSTVO PRAVOSUĐA,11070,Općinska državna odvjetništva
+169,110,MINISTARSTVO PRAVOSUĐA,11075,Prekršajni sudovi
+170,110,MINISTARSTVO PRAVOSUĐA,11091,Ured za suzbijanje korupcije i organiziranog kriminaliteta
+171,120,URED PUČKOG PRAVOBRANITELJA,12005,Ured pučkog pravobranitelja
+172,121,PRAVOBRANITELJ ZA DJECU,12105,Pravobranitelj za djecu
+173,122,PRAVOBRANITELJ/ICA ZA RAVNOPRAVNOST SPOLOVA,12205,Pravobranitelj/ica za ravnopravnost spolova
+174,123,PRAVOBRANITELJ ZA OSOBE S INVALIDITETOM,12305,Pravobranitelj za osobe s invaliditetom
+175,160,DRŽAVNI ZAVOD ZA STATISTIKU,16005,Državni zavod za statistiku
+176,185,DRŽAVNI URED ZA REVIZIJU,18505,Državni ured za reviziju
+177,196,DRŽAVNA KOMISIJA ZA KONTROLU POSTUPAKA JAVNE NABAVE,19605,Državna komisija za kontrolu postupaka javne nabave
+178,250,AGENCIJA ZA ZAŠTITU OSOBNIH PODATAKA,25005,Agencija za zaštitu osobnih podataka
+179,256,DRŽAVNI ZAVOD ZA RADIOLOŠKU I NUKLEARNU SIGURNOST,25605,Državni zavod za radiološku i nuklearnu sigurnost
+180,258,POVJERENIK ZA INFORMIRANJE,25805,Povjerenik za informiranje
