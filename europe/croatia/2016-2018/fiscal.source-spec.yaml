@@ -57,20 +57,22 @@ fields:
 
 # Administrative Classification
 - header: admin1_code
-  title: "Razdjel (O1) - Tekući proračun"
+  title: "Razdjel"
   options: {}
   columnType: administrative-classification:generic:level1:code
 
 - header: admin1_label
+  title: "Naziv razdjela"
   options: {}
   columnType: administrative-classification:generic:level1:label
 
 - header: admin2_code
-  label: "Glava (O2) - Tekući proračun"
+  title: "Glava"
   options: {}
   columnType: administrative-classification:generic:level2:code
 
 - header: admin2_label
+  title: "Naziv glvae"
   options: {}
   columnType: administrative-classification:generic:level2:label
 
@@ -78,29 +80,32 @@ fields:
 
 # Activity
 - header: activity1_code
-  title: "Nac. prog. (P1)"
+  title: "Glavni program"
   options: {}
   columnType: activity:generic:program:code
 
 - header: activity1_label
+  title: "Naziv Glavnog programa"
   options: {}
   columnType: activity:generic:program:label
 
 - header: activity2_code
-  title: "Program (P2)"
+  title: "Program"
   options: {}
   columnType: activity:generic:subprogram:code
 
 - header: activity2_label
+  title: "Naziv Programa"
   options: {}
   columnType: activity:generic:subprogram:label
 
 - header: activity3_code
-  title: "Korisnik proračuna"
+  title: "Potprogram"
   options: {}
   columnType: activity:generic:project:code
 
 - header: activity3_label
+  title: "Naziv potprograma"
   options: {}
   columnType: activity:generic:project:label
 
@@ -108,22 +113,24 @@ fields:
 
 # Functional Classification
 - header: func1_code
-  title: "Funk. podr."
+  title: "Funkcijsko područje"
   options: {}
   columnType: functional-classification:generic:level1:code
 
 - header: func1_label
+  title: "Naziv funkcijskog područja"
   options: {}
   columnType: functional-classification:generic:level1:label
 
 
 # Financial Source
 - header: fin_source_code
-  title: "Izvor financiranja (I2)"
+  title: "Izvor financiranja"
   options: {}
   columnType: fin-source:generic:level1:code
 
 - header: fin_source_label
+  title: "Naziv izvora financiranja"
   options: {}
   columnType: fin-source:generic:level1:label
 
@@ -131,29 +138,32 @@ fields:
 
 # Economic Classification
 - header: econ1_code
-  title: "Razred stavke (E1)"
+  title: "Razred stavke"
   options: {}
   columnType: economic-classification:generic:level1:code
 
 - header: econ1_label
+  title: "Naziv razreda stavke"
   options: {}
   columnType: economic-classification:generic:level1:label
 
 - header: econ2_code
-  title: "Skupina stavke (E2)"
+  title: "Skupina stavke"
   options: {}
   columnType: economic-classification:generic:level2:code
 
 - header: econ2_label
+  title: "Naziv skupine stavke"
   options: {}
   columnType: economic-classification:generic:level2:label
 
 - header: econ3_code
-  title: "Podskup. stavke (E3)"
+  title: "Podskupina stavke"
   options: {}
   columnType: economic-classification:generic:level3:code
 
 - header: econ3_label
+  title: "Naziv Podskupine"
   options: {}
   columnType: economic-classification:generic:level3:label
 
