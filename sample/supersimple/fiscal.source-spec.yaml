@@ -10,21 +10,25 @@ sources:
 
 fields:
 - header: year
+  title: "Year"
   options: {}
   columnType: date:fiscal-year
 
 # Economic Classification
 - header: econ_cls
+  title: "Economic"
   options: {}
   columnType: economic-classification:generic:code
 
 # Administrative Classification
 - header: admin_cls
+  title: "Administrative"
   options: {}
   columnType: administrative-classification:generic:code
 
 # Measures
 - header: amount
+  title: "Amount"
   options: {}
   columnType: value
 
