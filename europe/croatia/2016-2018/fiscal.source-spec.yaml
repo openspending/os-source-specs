@@ -50,6 +50,7 @@ fields:
 
 # Fiscal year
 - header: Year
+  title: "Godina"
   options: {}
   columnType: date:fiscal-year
 
