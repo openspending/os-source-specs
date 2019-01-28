@@ -28,7 +28,8 @@ sources:
   url: http://www.transparenciapresupuestaria.gob.mx/work/models/PTP/DatosAbiertos/BD_Cuenta_Publica/CSV/cuenta_publica_2017_gf_ecd_epe.csv
 - encoding: windows-1252
   url: http://www.transparenciapresupuestaria.gob.mx/work/models/PTP/DatosAbiertos/Bases_de_datos_presupuesto/CSV/pef_ac01_avance_2018.csv
-
+- encoding: windows-1252
+  url: http://www.transparenciapresupuestaria.gob.mx/work/models/PTP/DatosAbiertos/Bases_de_datos_presupuesto/CSV/PEF_2019.csv
 fields:
 # Fiscal year
 - header: CICLO
