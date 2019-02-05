@@ -2,8 +2,18 @@
 
 [![Gitter](https://img.shields.io/gitter/room/openspending/chat.svg)](https://gitter.im/openspending/chat)
 [![Travis](https://img.shields.io/travis/openspending/os-source-specs.svg)](https://travis-ci.org/openspending/os-source-specs)
+[![Pipelines](https://pipelines.openspending.org/badge/collection/source-specs/)](https://pipelines.openspending.org/)
 
 This repository contains `fiscal.source-spec.yaml` files for use by [`os-data-importers`](https://github.com/openspending/os-data-importers), to automate the uploading of fiscal data to [OpenSpending](https://openspending.org/).
+
+## Pipeline status
+
+|Country|Status|
+|---|---|
+|Burkina Faso|[![Burkina Faso](https://pipelines.openspending.org/badge/collection/source-specs/os-source-specs/africa/burkina-faso)](https://pipelines.openspending.org/source-specs/os-source-specs/africa/burkina-faso)|
+|Croatia|[![Croatia](https://pipelines.openspending.org/badge/collection/source-specs/os-source-specs/europe/croatia)](https://pipelines.openspending.org/source-specs/os-source-specs/europe/croatia)|
+|Dominican Republic|[![Dominican Republic](https://pipelines.openspending.org/badge/collection/source-specs/os-source-specs/america/dominican-republic)](https://pipelines.openspending.org/source-specs/os-source-specs/america/dominican-republic)|
+|Mexico|[![Mexico](https://pipelines.openspending.org/badge/collection/source-specs/os-source-specs/america/mexico)](https://pipelines.openspending.org/source-specs/os-source-specs/america/mexico)|
 
 ## How can I contribute fiscal specs?
 
