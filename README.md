@@ -29,3 +29,9 @@ You can test your fiscal spec by creating a Pull Request, or locally with the no
 $ npm install -g pajv
 $ pajv -s schema.json -d "<continent>/<country>/fiscal.source-spec.yaml"
 ```
+
+Or all the fiscal specs with:
+
+```sh
+$ pajv -s schema.json -d "**/fiscal.source-spec.{yaml,yml}"
+```
