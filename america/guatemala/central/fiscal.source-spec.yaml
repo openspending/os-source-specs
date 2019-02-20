@@ -1,0 +1,164 @@
+title: "BOOST Guatemala Central"
+private: False
+owner-id: 667df60aa07c34260eae9b55b2778712
+
+sources:
+- url: http://boost.worldbank.org/Data/boost/boostcms/files/field/country-attachments/guatemala_boost_central_2014-2015sp.xlsx
+  sheet: 2
+
+fields:
+
+
+# Fiscal year
+- header: YEAR
+  options: {}
+  columnType: date:fiscal-year
+
+
+# Administrative Classification
+- header: ADMIN1
+  options: {}
+  columnType: administrative-classification:generic:level1:code
+  title: Gobierno Central
+
+- header: ADMIN2
+  options: {}
+  columnType: administrative-classification:generic:level2:code
+  title: Entidad
+
+- header: ADMIN3
+  options: {}
+  columnType: administrative-classification:generic:level3:code
+  title: Unidad Ejecutora
+
+
+# Geo
+- header: GEO1
+  options: {}
+  columnType: geo-source:target:level1:code
+  title: Departamento
+- header: GEO2
+  options: {}
+  columnType: geo-source:target:level2:code
+  title: Municipio
+
+
+# Functional Classification
+- header: FUNC1
+  options: {}
+  columnType: functional-classification:generic:level1:code
+  title: Finalidad
+
+- header: FUNC2
+  options: {}
+  columnType: functional-classification:generic:level2:code
+  title: Función
+
+- header: FUNC3
+  options: {}
+  columnType: functional-classification:generic:level3:code
+  title: División
+
+
+# Economic Classification
+- header: ECON1
+  options: {}
+  columnType: economic-classification:generic:level1:code
+  title: "Nivel 2: Económico"
+
+- header: ECON2
+  options: {}
+  columnType: economic-classification:generic:level2:code
+  title: "Nivel 3: Económico"
+
+- header: ECON3
+  options: {}
+  columnType: economic-classification:generic:level3:code
+  title: "Nivel 4: Económico"
+
+- header: ECON4
+  options: {}
+  columnType: economic-classification:generic:level4:code
+  title: "Nivel 5: Económico"
+
+- header: ECON5
+  options: {}
+  columnType: economic-classification:generic:level5:code
+  title: Grupo
+
+- header: ECON6
+  options: {}
+  columnType: economic-classification:generic:level6:code
+  title: Sub-grupo
+
+- header: ECON7
+  options: {}
+  columnType: economic-classification:generic:level7:code
+  title: Reglón
+
+# Financial Source
+- header: SOURCE_FN1
+  options: {}
+  columnType: fin-source:generic:level1:code
+  title: Fuente agregada de financiamiento
+
+- header: SOURCE_FN2
+  options: {}
+  columnType: fin-source:generic:level2:code
+  title: Fuente de financiamiento
+
+- header: SOURCE_FN3
+  options: {}
+  columnType: fin-source:generic:level3:code
+  title: Organismo
+
+# Activity
+- header: PROGRAM1
+  options: {}
+  columnType: activity:generic:program:code
+  title: Programa
+
+- header: PROGRAM2
+  options: {}
+  columnType: activity:generic:subprogram:code
+  title: Sub-Programa
+
+- header: PROJECT1
+  options: {}
+  columnType: activity:generic:project:code
+  title: Proyecto
+
+- header: PROJECT2
+  options: {}
+  columnType: activity:generic:subproject:code
+  title: Actividad Obra
+
+
+# Measures
+- header: PHASE_ID
+  columnType: phase:id
+
+- header: PHASE
+  columnType: phase:label
+
+measures:
+  currency: GTQ
+  mapping:
+    APPROVED:
+      PHASE_ID: "0"
+      PHASE: Inicial
+    RELEASED:
+      PHASE_ID: "1"
+      PHASE: Vigente
+    COMMITTED:
+      PHASE_ID: "2"
+      PHASE: Comprometido
+    ACCRUED:
+      PHASE_ID: "3"
+      PHASE: Devengado
+    PAID:
+      PHASE_ID: "4"
+      PHASE: Pagado
+  currency-conversion: {}
+
+#postprocessing:

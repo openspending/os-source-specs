@@ -13,7 +13,9 @@ This repository contains `fiscal.source-spec.yaml` files for use by [`os-data-im
 |Burkina Faso|[![Burkina Faso](https://pipelines.openspending.org/badge/collection/source-specs/os-source-specs/africa/burkina-faso)](https://pipelines.openspending.org/source-specs/os-source-specs/africa/burkina-faso)|
 |Croatia|[![Croatia](https://pipelines.openspending.org/badge/collection/source-specs/os-source-specs/europe/croatia)](https://pipelines.openspending.org/source-specs/os-source-specs/europe/croatia)|
 |Dominican Republic|[![Dominican Republic](https://pipelines.openspending.org/badge/collection/source-specs/os-source-specs/america/dominican-republic)](https://pipelines.openspending.org/source-specs/os-source-specs/america/dominican-republic)|
+|Guatemala|[![Guatemala](https://pipelines.openspending.org/badge/collection/source-specs/os-source-specs/america/guatemala)](https://pipelines.openspending.org/source-specs/os-source-specs/america/guatemala)|
 |Mexico|[![Mexico](https://pipelines.openspending.org/badge/collection/source-specs/os-source-specs/america/mexico)](https://pipelines.openspending.org/source-specs/os-source-specs/america/mexico)|
+|Uruguay|[![Uruguay](https://pipelines.openspending.org/badge/collection/source-specs/os-source-specs/america/uruguay)](https://pipelines.openspending.org/source-specs/os-source-specs/america/uruguay)|
 
 ## How can I contribute fiscal specs?
 
