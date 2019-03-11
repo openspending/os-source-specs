@@ -1,24 +1,14 @@
-<<<<<<< HEAD:europe/croatia/fiscal.source-spec.yaml
-title: "Croatia Budget Plan"
-private: False
-owner-id: 667df60aa07c34260eae9b55b2778712
-
-sources:
-- url: http://datastore.openspending.org/source-files/Croatia-BudgetForecast-2016.xlsx
-  sheet: 2
-=======
 title: "Croatia Budget Plan 2016-2018"
 dataset-name: croatia-budget-plan-2016-2018
 resource-name: croatia-budget-plan-2016-2018
 private: False
 owner-id: 667df60aa07c34260eae9b55b2778712
-revision: 2
+revision: 1
 
 sources:
 - url: ../T0753 Izvoz podataka za OpenSpending 2016-2018.xlsx
   sheet: 3
   format: xlsx
->>>>>>> 9a4d2dc... Separate Croatia files in the two datasets:europe/croatia/2016-2018/fiscal.source-spec.yaml
   headers:
     - admin1_code
     - admin1_label
@@ -179,10 +169,3 @@ measures:
       Year: "2017"
     plan_2018:
       Year: "2018"
-<<<<<<< HEAD:europe/croatia/fiscal.source-spec.yaml
-  currency-conversion: {}
-
-
-#postprocessing:
-=======
->>>>>>> 9a4d2dc... Separate Croatia files in the two datasets:europe/croatia/2016-2018/fiscal.source-spec.yaml
