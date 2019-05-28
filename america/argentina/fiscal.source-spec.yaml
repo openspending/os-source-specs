@@ -1,0 +1,350 @@
+title: "Credit and Full Budget Expenditures for the current Fiscal Year of the National Public Administration"
+description: "Accumulated daily distribution of the budget credits with complete classifiers corresponding to the Current Fiscal Year."
+contributors:
+  - title: "Treasury. Secretary of Finance. Undersecretary of Budget."
+    organisation: "Treasury. Secretary of Finance. Undersecretary of Budget."
+    role: "author"
+    email: "info@presupuestoabierto.gob.ar"
+keywords:
+  - "Economy"
+  - "Finance"
+  - "Credits"
+  - "Expenses"
+  - "Budget"
+private: False
+owner-id: 6018ab87076187018fc29c94a68a3cd2
+revision: 1
+
+sources:
+  - url: ./data/credito-anual-2019.csv
+    format: csv
+    headers:
+      - impacto_presupuestario_anio
+      - ejercicio_presupuestario
+      - sector_id
+      - sector_desc
+      - subsector_id
+      - subsector_desc
+      - caracter_id
+      - caracter_desc
+      - jurisdiccion_id
+      - jurisdiccion_desc
+      - subjurisdiccion_id
+      - subjurisdiccion_desc
+      - entidad_id
+      - entidad_desc
+      - servicio_id
+      - servicio_desc
+      - programa_id
+      - programa_desc
+      - subprograma_id
+      - subprograma_desc
+      - proyecto_id
+      - proyecto_desc
+      - actividad_id
+      - actividad_desc
+      - obra_id
+      - obra_desc
+      - finalidad_id
+      - finalidad_desc
+      - funcion_id
+      - funcion_desc
+      - inciso_id
+      - inciso_desc
+      - principal_id
+      - principal_desc
+      - parcial_id
+      - parcial_desc
+      - subparcial_id
+      - subparcial_desc
+      - clasificador_economico_8_digitos_id
+      - clasificador_economico_8_digitos_desc
+      - fuente_financiamiento_id
+      - fuente_financiamiento_desc
+      - ubicacion_geografica_id
+      - ubicacion_geografica_desc
+      - unidad_ejecutora_id
+      - unidad_ejecutora_desc
+      - credito_presupuestado
+      - credito_vigente
+      - credito_comprometido
+      - credito_devengado
+      - credito_pagado
+      - ultima_actualizacion_fecha
+    skip_rows: [1, -1]
+
+
+fields:
+
+- header: impacto_presupuestario_fecha
+  title: "impacto_presupuestario_fecha"
+  options:
+    format: "%Y-%m-%d %H:%M:%S"
+  columnType: date:fiscal:activity-approval
+
+- header: impacto_presupuestario_anio
+  title: "impacto_presupuestario_anio"
+  options:
+    format: "%Y"
+  columnType: date:generic
+
+- header: impacto_presupuestario_mes
+  title: "impacto_presupuestario_mes"
+  options:
+    format: "%m"
+  columnType: date:generic
+
+- header: ejercicio_presupuestario
+  title: "ejercicio_presupuestario"
+  options: {}
+  columnType: date:fiscal-year
+
+- header: sector_id
+  title: "sector_id"
+  options: {}
+  columnType: administrative-classification:generic:level1:code
+
+- header: sector_desc
+  title: "sector_desc"
+  options: {}
+  columnType: administrative-classification:generic:level1:description
+
+- header: subsector_id
+  title: "subsector_id"
+  options: {}
+  columnType: administrative-classification:generic:level2:code
+
+- header: subsector_desc
+  title: "subsector_desc"
+  options: {}
+  columnType: administrative-classification:generic:level2:description
+
+- header: caracter_id
+  title: "caracter_id"
+  options: {}
+  columnType: administrative-classification:generic:level3:code
+
+- header: caracter_desc
+  title: "caracter_desc"
+  options: {}
+  columnType: administrative-classification:generic:level3:description
+
+- header: jurisdiccion_id
+  title: "jurisdiccion_id"
+  options: {}
+  columnType: administrative-classification:generic:level4:code
+
+- header: jurisdiccion_desc
+  title: "jurisdiccion_desc"
+  options: {}
+  columnType: administrative-classification:generic:level4:description
+
+- header: subjurisdiccion_id
+  title: "subjurisdiccion_id"
+  options: {}
+  columnType: administrative-classification:generic:level5:code
+
+- header: subjurisdiccion_desc
+  title: "subjurisdiccion_desc"
+  options: {}
+  columnType: administrative-classification:generic:level5:description
+
+- header: entidad_id
+  title: "entidad_id"
+  options: {}
+  columnType: administrative-classification:generic:level6:code
+
+- header: entidad_desc
+  title: "entidad_desc"
+  options: {}
+  columnType: administrative-classification:generic:level6:description
+
+- header: servicio_id
+  title: "servicio_id"
+  options: {}
+  columnType: administrative-classification:generic:level7:code
+
+- header: servicio_desc
+  title: "servicio_desc"
+  options: {}
+  columnType: administrative-classification:generic:level7:description
+
+- header: programa_id
+  title: "programa_id"
+  options: {}
+  columnType: activity:generic:program:code
+
+- header: programa_desc
+  title: "programa_desc"
+  options: {}
+  columnType: activity:generic:program:label
+
+- header: subprograma_id
+  title: "subprograma_id"
+  options: {}
+  columnType: activity:generic:subprogram:code
+
+- header: subprograma_desc
+  title: "subprograma_desc"
+  options: {}
+  columnType: activity:generic:subprogram:label
+
+- header: proyecto_id
+  title: "proyecto_id"
+  options: {}
+  columnType: activity:generic:project:code
+
+- header: proyecto_desc
+  title: "proyecto_desc"
+  options: {}
+  columnType: activity:generic:project:label
+
+- header: actividad_id
+  title: "actividad_id"
+  options: {}
+  columnType: activity:generic:subproject:code
+
+- header: actividad_desc
+  title: "actividad_desc"
+  options: {}
+  columnType: activity:generic:subproject:label
+
+- header: obra_id
+  title: "obra_id"
+  options: {}
+  columnType: activity:generic:subproject:code
+
+- header: obra_desc
+  title: "obra_desc"
+  options: {}
+  columnType: activity:generic:subproject:label
+
+- header: finalidad_id
+  title: "finalidad_id"
+  options: {}
+  columnType: functional-classification:generic:level1:code
+
+- header: finalidad_desc
+  title: "finalidad_desc"
+  options: {}
+  columnType: functional-classification:generic:level1:description
+
+- header: funcion_id
+  title: "funcion_id"
+  options: {}
+  columnType: functional-classification:generic:level2:code
+
+- header: funcion_desc
+  title: "funcion_desc"
+  options: {}
+  columnType: functional-classification:generic:level2:description
+
+- header: inciso_id
+  title: "inciso_id"
+  options: {}
+  columnType: functional-classification:generic:level3:code
+
+- header: inciso_desc
+  title: "inciso_desc"
+  options: {}
+  columnType: functional-classification:generic:level3:description
+
+- header: principal_id
+  title: "principal_id"
+  options: {}
+  columnType: functional-classification:generic:level4:code
+
+- header: principal_desc
+  title: "principal_desc"
+  options: {}
+  columnType: functional-classification:generic:level4:description
+
+- header: parcial_id
+  title: "parcial_id"
+  options: {}
+  columnType: functional-classification:generic:level5:code
+
+- header: parcial_desc
+  title: "parcial_desc"
+  options: {}
+  columnType: functional-classification:generic:level5:description
+
+- header: subparcial_id
+  title: "subparcial_id"
+  options: {}
+  columnType: functional-classification:generic:level6:code
+
+- header: subparcial_desc
+  title: "subparcial_desc"
+  options: {}
+  columnType: functional-classification:generic:level6:description
+
+- header: clasificador_economico_8_digitos_id
+  title: "clasificador_economico_8_digitos_id"
+  options: {}
+  columnType: economic-classification:generic:level1:code
+
+- header: clasificador_economico_8_digitos_desc
+  title: "clasificador_economico_8_digitos_desc"
+  options: {}
+  columnType: economic-classification:generic:level1:description
+
+- header: fuente_financiamiento_id
+  title: "fuente_financiamiento_id"
+  options: {}
+  columnType: fin-source:generic:code
+
+- header: fuente_financiamiento_desc
+  title: "fuente_financiamiento_desc"
+  options: {}
+  columnType: fin-source:generic:label
+
+- header: ubicacion_geografica_id
+  title: "ubicacion_geografica_id"
+  options: {}
+  columnType: geo-source:generic:code
+
+- header: ubicacion_geografica_desc
+  title: "ubicacion_geografica_desc"
+  options: {}
+  columnType: geo-source:generic:title
+
+- header: unidad_ejecutora_id
+  title: "unidad_ejecutora_id"
+  options: {}
+  columnType: administrator:generic:id
+
+- header: unidad_ejecutora_desc
+  title: "unidad_ejecutora_desc"
+  options: {}
+  columnType: administrator:generic:name
+
+
+# Measures
+- header: proposed_value
+  title: "credito_presupuestado"
+  options:
+    currency: ARS
+    phase: proposed
+  columnType: value
+
+- header: approved_value
+  title: "credito_vigente"
+  options:
+    currency: ARS
+    phase: approved
+  columnType: value
+
+- header: adjusted_value
+  title: "credito_comprometido"
+  options:
+    currency: ARS
+    phase: adjusted
+  columnType: value
+
+- header: executed_value
+  title: "credito_devengado"
+  options:
+    currency: ARS
+    phase: executed
+  columnType: value
