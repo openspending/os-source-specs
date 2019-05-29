@@ -16,7 +16,8 @@ owner-id: 6018ab87076187018fc29c94a68a3cd2
 revision: 1
 
 sources:
-  - url: ./data/credito-anual-2019.csv
+  - url: https://www.presupuestoabierto.gob.ar/datasets/credito-gasto-completo-vigente.zip
+    compression: zip
     format: csv
     headers:
       - impacto_presupuestario_anio
@@ -319,6 +320,10 @@ fields:
   options: {}
   columnType: administrator:generic:name
 
+- header: ultima_actualizacion_fecha
+  title: "ultima_actualizacion_fecha"
+  options: {}
+  columnType: date:generic
 
 # Measures
 - header: proposed_value
@@ -347,4 +352,10 @@ fields:
   options:
     currency: ARS
     phase: executed
+  columnType: value
+
+- header: paid_value
+  title: "credito_pagado"
+  options:
+    currency: ARS
   columnType: value
