@@ -16,7 +16,7 @@ owner-id: 6018ab87076187018fc29c94a68a3cd2
 revision: 1
 
 sources:
-  - url: https://www.presupuestoabierto.gob.ar/datasets/credito-gasto-completo-vigente.zip
+  - url: https://www.presupuestoabierto.gob.ar/datasets/2019/credito-anual-2019.zip
     compression: zip
     format: csv
     headers:
@@ -359,3 +359,10 @@ fields:
   options:
     currency: ARS
   columnType: value
+
+
+postprocessing:
+- processor: processors/clean-dates
+  parameters:
+    columns:
+    - ultima_actualizacion_fecha
