@@ -77,22 +77,10 @@ sources:
 
 fields:
 
-- header: impacto_presupuestario_fecha
-  title: "impacto_presupuestario_fecha"
-  options:
-    format: "%Y-%m-%d %H:%M:%S"
-  columnType: date:fiscal:activity-approval
-
 - header: impacto_presupuestario_anio
   title: "impacto_presupuestario_anio"
   options:
     format: "%Y"
-  columnType: date:generic
-
-- header: impacto_presupuestario_mes
-  title: "impacto_presupuestario_mes"
-  options:
-    format: "%m"
   columnType: date:generic
 
 - header: ejercicio_presupuestario
