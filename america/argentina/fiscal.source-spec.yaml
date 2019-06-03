@@ -314,38 +314,43 @@ fields:
   columnType: date:generic
 
 # Measures
-- header: proposed_value
+- header: credito_presupuestado
   title: "credito_presupuestado"
   options:
     currency: ARS
+    decimalChar: ","
     phase: proposed
   columnType: value
 
-- header: approved_value
+- header: credito_vigente
   title: "credito_vigente"
   options:
     currency: ARS
+    decimalChar: ","
     phase: approved
   columnType: value
 
-- header: adjusted_value
+- header: credito_comprometido
   title: "credito_comprometido"
   options:
     currency: ARS
+    decimalChar: ","
     phase: adjusted
   columnType: value
 
-- header: executed_value
+- header: credito_devengado
   title: "credito_devengado"
   options:
     currency: ARS
+    decimalChar: ","
     phase: executed
   columnType: value
 
-- header: paid_value
+- header: credito_pagado
   title: "credito_pagado"
   options:
     currency: ARS
+    decimalChar: ","
   columnType: value
 
 
