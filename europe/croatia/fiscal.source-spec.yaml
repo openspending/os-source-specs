@@ -252,8 +252,6 @@ fields:
   options:
     currency: HRK
     phase: proposed
-    decimalChar: ","
-    groupChar: "."
   columnType: value
 
 - header: approved_value
@@ -261,8 +259,6 @@ fields:
   options:
     currency: HRK
     phase: approved
-    decimalChar: ","
-    groupChar: "."
   columnType: value
 
 - header: executed_value
@@ -270,6 +266,12 @@ fields:
   options:
     currency: HRK
     phase: executed
-    decimalChar: ","
-    groupChar: "."
   columnType: value
+
+postprocessing:
+- processor: processors/format-amounts
+  parameters:
+    columns:
+    - proposed_value
+    - approved_value
+    - executed_value
