@@ -16,11 +16,12 @@ owner-id: 6018ab87076187018fc29c94a68a3cd2
 revision: 1
 
 sources:
-  - url: https://www.presupuestoabierto.gob.ar/datasets/2019/credito-anual-2019.zip
+  - url: https://www.presupuestoabierto.gob.ar/datasets/2019/credito-mensual-2019.zip
     compression: zip
     format: csv
     headers:
       - impacto_presupuestario_anio
+      - impacto_presupuestario_mes
       - ejercicio_presupuestario
       - sector_id
       - sector_desc
@@ -71,7 +72,6 @@ sources:
       - credito_comprometido
       - credito_devengado
       - credito_pagado
-      - ultima_actualizacion_fecha
     skip_rows: [1, -1]
 
 
@@ -81,6 +81,12 @@ fields:
   title: "impacto_presupuestario_anio"
   options:
     format: "%Y"
+  columnType: date:generic
+
+- header: impacto_presupuestario_mes
+  title: "impacto_presupuestario_mes"
+  options:
+    format: "%m"
   columnType: date:generic
 
 - header: ejercicio_presupuestario
@@ -96,7 +102,7 @@ fields:
 - header: sector_desc
   title: "sector_desc"
   options: {}
-  columnType: administrative-classification:generic:level1:description
+  columnType: administrative-classification:generic:level1:label
 
 - header: subsector_id
   title: "subsector_id"
@@ -106,7 +112,7 @@ fields:
 - header: subsector_desc
   title: "subsector_desc"
   options: {}
-  columnType: administrative-classification:generic:level2:description
+  columnType: administrative-classification:generic:level2:label
 
 - header: caracter_id
   title: "caracter_id"
@@ -116,7 +122,7 @@ fields:
 - header: caracter_desc
   title: "caracter_desc"
   options: {}
-  columnType: administrative-classification:generic:level3:description
+  columnType: administrative-classification:generic:level3:label
 
 - header: jurisdiccion_id
   title: "jurisdiccion_id"
@@ -126,7 +132,7 @@ fields:
 - header: jurisdiccion_desc
   title: "jurisdiccion_desc"
   options: {}
-  columnType: administrative-classification:generic:level4:description
+  columnType: administrative-classification:generic:level4:label
 
 - header: subjurisdiccion_id
   title: "subjurisdiccion_id"
@@ -136,7 +142,7 @@ fields:
 - header: subjurisdiccion_desc
   title: "subjurisdiccion_desc"
   options: {}
-  columnType: administrative-classification:generic:level5:description
+  columnType: administrative-classification:generic:level5:label
 
 - header: entidad_id
   title: "entidad_id"
@@ -146,7 +152,7 @@ fields:
 - header: entidad_desc
   title: "entidad_desc"
   options: {}
-  columnType: administrative-classification:generic:level6:description
+  columnType: administrative-classification:generic:level6:label
 
 - header: servicio_id
   title: "servicio_id"
@@ -156,7 +162,7 @@ fields:
 - header: servicio_desc
   title: "servicio_desc"
   options: {}
-  columnType: administrative-classification:generic:level7:description
+  columnType: administrative-classification:generic:level7:label
 
 - header: programa_id
   title: "programa_id"
@@ -216,7 +222,7 @@ fields:
 - header: finalidad_desc
   title: "finalidad_desc"
   options: {}
-  columnType: functional-classification:generic:level1:description
+  columnType: functional-classification:generic:level1:label
 
 - header: funcion_id
   title: "funcion_id"
@@ -226,7 +232,7 @@ fields:
 - header: funcion_desc
   title: "funcion_desc"
   options: {}
-  columnType: functional-classification:generic:level2:description
+  columnType: functional-classification:generic:level2:label
 
 - header: inciso_id
   title: "inciso_id"
@@ -236,7 +242,7 @@ fields:
 - header: inciso_desc
   title: "inciso_desc"
   options: {}
-  columnType: functional-classification:generic:level3:description
+  columnType: functional-classification:generic:level3:label
 
 - header: principal_id
   title: "principal_id"
@@ -246,7 +252,7 @@ fields:
 - header: principal_desc
   title: "principal_desc"
   options: {}
-  columnType: functional-classification:generic:level4:description
+  columnType: functional-classification:generic:level4:label
 
 - header: parcial_id
   title: "parcial_id"
@@ -256,7 +262,7 @@ fields:
 - header: parcial_desc
   title: "parcial_desc"
   options: {}
-  columnType: functional-classification:generic:level5:description
+  columnType: functional-classification:generic:level5:label
 
 - header: subparcial_id
   title: "subparcial_id"
@@ -266,7 +272,7 @@ fields:
 - header: subparcial_desc
   title: "subparcial_desc"
   options: {}
-  columnType: functional-classification:generic:level6:description
+  columnType: functional-classification:generic:level6:label
 
 - header: clasificador_economico_8_digitos_id
   title: "clasificador_economico_8_digitos_id"
@@ -276,7 +282,7 @@ fields:
 - header: clasificador_economico_8_digitos_desc
   title: "clasificador_economico_8_digitos_desc"
   options: {}
-  columnType: economic-classification:generic:level1:description
+  columnType: economic-classification:generic:level1:label
 
 - header: fuente_financiamiento_id
   title: "fuente_financiamiento_id"
@@ -307,11 +313,6 @@ fields:
   title: "unidad_ejecutora_desc"
   options: {}
   columnType: administrator:generic:name
-
-- header: ultima_actualizacion_fecha
-  title: "ultima_actualizacion_fecha"
-  options: {}
-  columnType: date:generic
 
 # Measures
 - header: credito_presupuestado
@@ -355,7 +356,12 @@ fields:
 
 
 postprocessing:
-- processor: processors/clean-dates
+- processor: processors/fix-amounts
   parameters:
     columns:
-    - ultima_actualizacion_fecha
+      - credito_presupuestado
+      - credito_vigente
+      - credito_comprometido
+      - credito_devengado
+      - credito_pagado
+
