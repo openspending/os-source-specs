@@ -275,12 +275,12 @@ fields:
   columnType: functional-classification:generic:level6:label
 
 - header: clasificador_economico_8_digitos_id
-  title: "clasificador_economico_8_digitos_id"
+  title: "clasif_econ_8_digitos_id"
   options: {}
   columnType: economic-classification:generic:level1:code
 
 - header: clasificador_economico_8_digitos_desc
-  title: "clasificador_economico_8_digitos_desc"
+  title: "clasif_econ_8_digitos_desc"
   options: {}
   columnType: economic-classification:generic:level1:label
 
