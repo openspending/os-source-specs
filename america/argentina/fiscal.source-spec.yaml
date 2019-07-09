@@ -59,8 +59,8 @@ sources:
       - parcial_desc
       - subparcial_id
       - subparcial_desc
-      - clasificador_economico_8_digitos_id
-      - clasificador_economico_8_digitos_desc
+      - clasif_econ_8_digitos_id
+      - clasif_econ_8_digitos_desc
       - fuente_financiamiento_id
       - fuente_financiamiento_desc
       - ubicacion_geografica_id
@@ -274,12 +274,12 @@ fields:
   options: {}
   columnType: functional-classification:generic:level6:label
 
-- header: clasificador_economico_8_digitos_id
+- header: clasif_econ_8_digitos_id
   title: "clasif_econ_8_digitos_id"
   options: {}
   columnType: economic-classification:generic:level1:code
 
-- header: clasificador_economico_8_digitos_desc
+- header: clasif_econ_8_digitos_desc
   title: "clasif_econ_8_digitos_desc"
   options: {}
   columnType: economic-classification:generic:level1:label
