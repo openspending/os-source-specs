@@ -207,12 +207,12 @@ fields:
 - header: obra_id
   title: "obra_id"
   options: {}
-  columnType: activity:generic:subproject:code
+  columnType: activity:generic:contract:code
 
 - header: obra_desc
   title: "obra_desc"
   options: {}
-  columnType: activity:generic:subproject:label
+  columnType: activity:generic:contract:label
 
 - header: finalidad_id
   title: "finalidad_id"
