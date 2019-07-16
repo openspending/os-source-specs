@@ -4,90 +4,211 @@ owner-id: 667df60aa07c34260eae9b55b2778712
 revision: 1
 
 sources:
-- url: http://boost.worldbank.org/Data/boost/boostcms/files/field/country-attachments/boost_uruguay_v0.9_2011-2017_spanish.xlsx
-  sheet: 2
+    - url: http://boost.worldbank.org/Data/boost/boostcms/files/field/country-attachments/boost_uruguay_v0.9_2011-2017_spanish.xlsx
+      sheet: 2
+      headers:
+        - year
+        - admin_1_code
+        - admin_2_code
+        - func_1_code
+        - func_2_code
+        - func_2_label
+        - activ_prj_code
+        - finsrc_1_code
+        - finsrc_2_code
+        - exp_type_code
+        - econ_1_code
+        - econ_2_code
+        - econ_3_code
+        - approved
+        - modified
+        - executed
+      skip_rows: [1]
+    - url: https://ptp.opp.gub.uy/sites/default/files/datos-abiertos/credito_presupuestal_detalle_2011.csv
+      headers: &csv_headers
+        - year
+        - admin_1_label
+        - admin_2_label
+        - func_1_label
+        - func_2_label
+        - activ_prj_code
+        - activ_prj_label
+        - finsrc_1_label
+        - finsrc_2_label
+        - exp_type_label
+        - econ_1_label
+        - econ_2_label
+        - econ_3_code
+        - econ_3_label
+        - approved
+        - modified
+        - executed
+        - admin_1_code
+        - admin_2_code
+        - func_1_code
+        - func_2_code
+        - finsrc_1_code
+        - finsrc_2_code
+        - exp_type_code
+        - econ_1_code
+        - econ_2_code
+      skip_rows: [1]
+    - url: https://ptp.opp.gub.uy/sites/default/files/datos-abiertos/credito_presupuestal_detalle_2012.csv
+      headers: *csv_headers
+      skip_rows: [1]
+    - url: https://ptp.opp.gub.uy/sites/default/files/datos-abiertos/credito_presupuestal_detalle_2013.csv
+      headers: *csv_headers
+      skip_rows: [1]
+    - url: https://ptp.opp.gub.uy/sites/default/files/datos-abiertos/credito_presupuestal_detalle_2014.csv
+      headers: *csv_headers
+      skip_rows: [1]
+    - url: https://ptp.opp.gub.uy/sites/default/files/datos-abiertos/credito_presupuestal_detalle_2015.csv
+      headers: *csv_headers
+      skip_rows: [1]
+    - url: https://ptp.opp.gub.uy/sites/default/files/datos-abiertos/credito_presupuestal_detalle_2016.csv
+      headers: *csv_headers
+      skip_rows: [1]
+    - url: https://ptp.opp.gub.uy/sites/default/files/datos-abiertos/credito_presupuestal_detalle_2017.csv
+      headers: *csv_headers
+      skip_rows: [1]
+    - url: https://ptp.opp.gub.uy/sites/default/files/datos-abiertos/credito_presupuestal_detalle_2018.csv
+      headers: *csv_headers
+      skip_rows: [1]
+    - url: https://ptp.opp.gub.uy/sites/default/files/datos-abiertos/credito_presupuestal_detalle_2019.csv
+      headers: *csv_headers
+      skip_rows: [1]
 
 fields:
 
 # Fiscal year
-- header: YEAR
+- header: year
   title: Año
   options: {}
   columnType: date:fiscal-year
 
 # Administrative Classification
-- header: ADMIN1
-  title: Inciso
+- header: admin_1_code
+  title: Inciso ID
   options: {}
   columnType: administrative-classification:generic:level1:code
 
-- header: ADMIN2
-  title: Unidad Ejecutora
+- header: admin_1_label
+  title: Inciso
+  options: {}
+  columnType: administrative-classification:generic:level1:label
+
+- header: admin_2_code
+  title: Unidad Ejecutora ID
   options: {}
   columnType: administrative-classification:generic:level2:code
 
+- header: admin_2_label
+  title: Unidad Ejecutora
+  options: {}
+  columnType: administrative-classification:generic:level2:label
+
 # Functional Classification
-- header: FUNC1
-  title: Área Programática
+- header: func_1_code
+  title: Área Programática ID
   options: {}
   columnType: functional-classification:generic:level1:code
 
-- header: FUNC2
-  title: Fun Programa
+- header: func_1_label
+  title: Área Programática
+  options: {}
+  columnType: functional-classification:generic:level1:label
+
+- header: func_2_code
+  title: Fun Programa ID
   options: {}
   columnType: functional-classification:generic:level2:code
 
+- header: func_2_label
+  title: Fun Programa
+  options: {}
+  columnType: functional-classification:generic:level2:label
+
 # Activity
-- header: PROGRAM1
-  title: Programa
+- header: activ_prj_code
+  title: Programa ID
   options: {}
   columnType: activity:generic:program:code
 
-- header: PROJECT1
-  title: Proyecto
+- header: activ_prj_label
+  title: Programa
   options: {}
-  columnType: activity:generic:project:code
+  columnType: activity:generic:program:label
 
 # Financial Source
-- header: SOURCE_FIN1
-  title: Financiamiento
+- header: finsrc_1_code
+  title: Financiamiento ID
   options: {}
   columnType: fin-source:generic:level1:code
 
-- header: SOURCE_FIN2
-  title: Fuente de Financiamiento
+- header: finsrc_1_label
+  title: Financiamiento
+  options: {}
+  columnType: fin-source:generic:level1:label
+
+- header: finsrc_2_code
+  title: Fuente de Financiamiento ID
   options: {}
   columnType: fin-source:generic:level2:code
 
+- header: finsrc_2_label
+  title: Fuente de Financiamiento
+  options: {}
+  columnType: fin-source:generic:level2:label
+
 # Other
-- header: EXP_TYPE
-  title: Tipo de Gasto
+- header: exp_type_code
+  title: Tipo de Gasto ID
   options: {}
   columnType: expenditure-type:code
 
+- header: exp_type_label
+  title: Tipo de Gasto
+  options: {}
+  columnType: expenditure-type:label
+
 # Economic Classification
-- header: ECON1
-  title: Grupo
+- header: econ_1_code
+  title: Grupo ID
   options: {}
   columnType: economic-classification:generic:level1:code
 
-- header: ECON2
-  title: Subgrupo
+- header: econ_1_label
+  title: Grupo
+  options: {}
+  columnType: economic-classification:generic:level1:label
+
+- header: econ_2_code
+  title: Subgrupo ID
   options: {}
   columnType: economic-classification:generic:level2:code
 
-- header: ECON3
-  title: Objeto del gasto
+- header: econ_2_label
+  title: Subgrupo
+  options: {}
+  columnType: economic-classification:generic:level2:label
+
+- header: econ_3_code
+  title: Objeto del gasto ID
   options: {}
   columnType: economic-classification:generic:level3:code
 
+- header: econ_3_label
+  title: Objeto del gasto
+  options: {}
+  columnType: economic-classification:generic:level3:label
+
 
 # Phase
-- header: PHASE_ID
+- header: phase_id
   title: Fase
   columnType: phase:id
 
-- header: PHASE
+- header: phase_label
   columnType: phase:label
 
 
@@ -95,14 +216,15 @@ measures:
   currency: UYU
   title: Monto (pesos corrientes)
   mapping:
-    APPROVED:
-      PHASE_ID: "0"
-      PHASE: "Crédito apertura"
-    MODIFIED:
-      PHASE_ID: "1"
-      PHASE: "Crédito vigente"
-    EXECUTED:
-      PHASE_ID: "2"
-      PHASE: "Ejecutado"
+    approved:
+      phase_id: "0"
+      phase_label: "Crédito apertura"
+    modified:
+      phase_id: "1"
+      phase_label: "Crédito vigente"
+    executed:
+      phase_id: "2"
+      phase_label: "Ejecutado"
 
-#postprocessing:
+postprocessing:
+- processor: processors/missing-columns
