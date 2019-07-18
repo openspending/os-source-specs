@@ -152,7 +152,7 @@ fields:
 - header: activ_prj_code
   title: Proyecto ID
   options: {}
-  columnType: activity:generic:project:code
+  columnType: activity:generic:program:label
 
 - header: activ_prj_label
   title: Proyecto
