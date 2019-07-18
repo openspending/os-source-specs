@@ -1,29 +1,29 @@
-title: "BOOST Uruguay"
+title: "Uruguay Budget 2011-2019"
 private: False
 owner-id: 667df60aa07c34260eae9b55b2778712
 revision: 1
 
 sources:
-    - url: http://boost.worldbank.org/Data/boost/boostcms/files/field/country-attachments/boost_uruguay_v0.9_2011-2017_spanish.xlsx
-      sheet: 2
-      headers:
-        - year
-        - admin_1_code
-        - admin_2_code
-        - func_1_code
-        - func_2_code
-        - func_2_label
-        - activ_prj_code
-        - finsrc_1_code
-        - finsrc_2_code
-        - exp_type_code
-        - econ_1_code
-        - econ_2_code
-        - econ_3_code
-        - approved
-        - modified
-        - executed
-      skip_rows: [1]
+    # - url: http://boost.worldbank.org/Data/boost/boostcms/files/field/country-attachments/boost_uruguay_v0.9_2011-2017_spanish.xlsx
+    #   sheet: 2
+    #   headers:
+    #     - year
+    #     - admin_1_code
+    #     - admin_2_code
+    #     - func_1_code
+    #     - func_2_code
+    #     - func_2_label
+    #     - activ_prj_code
+    #     - finsrc_1_code
+    #     - finsrc_2_code
+    #     - exp_type_code
+    #     - econ_1_code
+    #     - econ_2_code
+    #     - econ_3_code
+    #     - approved
+    #     - modified
+    #     - executed
+    #   skip_rows: [1]
     - url: https://ptp.opp.gub.uy/sites/default/files/datos-abiertos/credito_presupuestal_detalle_2011.csv
       headers: &csv_headers
         - year
@@ -129,15 +129,35 @@ fields:
   columnType: functional-classification:generic:level2:label
 
 # Activity
-- header: activ_prj_code
+- header: activ_program_code
   title: Programa ID
   options: {}
   columnType: activity:generic:program:code
 
-- header: activ_prj_label
+- header: activ_program_label
   title: Programa
   options: {}
   columnType: activity:generic:program:label
+
+- header: activ_subprogram_code
+  title: Subprograma ID
+  options: {}
+  columnType: activity:generic:subprogram:code
+
+- header: activ_subprogram_label
+  title: Subprograma
+  options: {}
+  columnType: activity:generic:subprogram:label
+
+- header: activ_prj_code
+  title: Proyecto ID
+  options: {}
+  columnType: activity:generic:project:code
+
+- header: activ_prj_label
+  title: Proyecto
+  options: {}
+  columnType: activity:generic:project:label
 
 # Financial Source
 - header: finsrc_1_code
@@ -226,5 +246,5 @@ measures:
       phase_id: "2"
       phase_label: "Ejecutado"
 
-postprocessing:
-- processor: processors/missing-columns
+# postprocessing:
+# - processor: processors/missing-columns
