@@ -22,6 +22,10 @@ new_columns = [
     'econ_1_label',
     'econ_2_label',
     'econ_3_label',
+    'activ_program_code',
+    'activ_program_label',
+    'activ_subprogram_code',
+    'activ_subprogram_label',
 ]
 
 field_names = [f['name'] for f in datapackage['resources'][0]['schema']['fields']]
@@ -52,6 +56,10 @@ def process_row(row):
         column_code = '{}_code'.format(column)
         if not row[column_label]:
             row[column_label] = row[column_code]
+    row['activ_program_code'] = row['func_1_code']
+    row['activ_program_label'] = row['func_1_label']
+    row['activ_subprogram_code'] = row['func_2_code']
+    row['activ_subprogram_label'] = row['func_2_label']
 
     return row
 
