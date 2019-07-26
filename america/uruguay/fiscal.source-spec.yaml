@@ -225,11 +225,11 @@ fields:
 
 
 # Phase
-- header: phase_id
+- header: id_phase
   title: Fase
   columnType: phase:id
 
-- header: phase_label
+- header: label_phase
   columnType: phase:label
 
 
@@ -238,14 +238,14 @@ measures:
   title: Monto (pesos corrientes)
   mapping:
     approved:
-      phase_id: "0"
-      phase_label: "Crédito apertura"
+      id_phase: "0"
+      label_phase: "Crédito apertura"
     modified:
-      phase_id: "1"
-      phase_label: "Crédito vigente"
+      id_phase: "1"
+      label_phase: "Crédito vigente"
     executed:
-      phase_id: "2"
-      phase_label: "Ejecutado"
+      id_phase: "2"
+      label_phase: "Ejecutado"
 
 # postprocessing:
 # - processor: processors/missing-columns
