@@ -223,7 +223,6 @@ fields:
   options: {}
   columnType: economic-classification:generic:level3:label
 
-
 # Phase
 - header: id_phase
   title: Fase
@@ -246,6 +245,8 @@ measures:
     executed:
       id_phase: "2"
       label_phase: "Ejecutado"
+
+deduplicate: yes
 
 # postprocessing:
 # - processor: processors/missing-columns
