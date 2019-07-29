@@ -223,28 +223,22 @@ fields:
   options: {}
   columnType: economic-classification:generic:level3:label
 
-# Phase
-- header: id_phase
-  title: Fase
-  columnType: phase:id
-
-- header: label_phase
-  columnType: phase:label
-
-
-measures:
-  currency: UYU
-  title: Monto (pesos corrientes)
-  mapping:
-    approved:
-      id_phase: "0"
-      label_phase: "Crédito apertura"
-    modified:
-      id_phase: "1"
-      label_phase: "Crédito vigente"
-    executed:
-      id_phase: "2"
-      label_phase: "Ejecutado"
+# Measures
+- header: approved
+  title: "Crédito apertura"
+  options:
+    currency: UYU
+  columnType: value
+- header: modified
+  title: "Crédito vigente"
+  options:
+    currency: UYU
+  columnType: value
+- header: executed
+  title: "Ejecutado"
+  options:
+    currency: UYU
+  columnType: value
 
 deduplicate: yes
 
