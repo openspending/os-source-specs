@@ -240,5 +240,7 @@ fields:
     currency: UYU
   columnType: value
 
+deduplicate: yes
+
 # postprocessing:
 # - processor: processors/missing-columns
