@@ -4,221 +4,88 @@ owner-id: 667df60aa07c34260eae9b55b2778712
 revision: 1
 
 sources:
-    # - url: http://boost.worldbank.org/Data/boost/boostcms/files/field/country-attachments/boost_uruguay_v0.9_2011-2017_spanish.xlsx
-    #   sheet: 2
-    #   headers:
-    #     - year
-    #     - admin_1_code
-    #     - admin_2_code
-    #     - func_1_code
-    #     - func_2_code
-    #     - func_2_label
-    #     - activ_prj_code
-    #     - finsrc_1_code
-    #     - finsrc_2_code
-    #     - exp_type_code
-    #     - econ_1_code
-    #     - econ_2_code
-    #     - econ_3_code
-    #     - approved
-    #     - modified
-    #     - executed
-    #   skip_rows: [1]
-    # - url: https://ptp.opp.gub.uy/sites/default/files/datos-abiertos/credito_presupuestal_detalle_2011.csv
     - url: ./data/credito_presupuestal_detalle_2011.csv
-      headers: &csv_headers
-        - year
-        - admin_1_label
-        - admin_2_label
-        - func_1_label
-        - func_2_label
-        - activ_prj_code
-        - activ_prj_label
-        - finsrc_1_label
-        - finsrc_2_label
-        - exp_type_label
-        - econ_1_label
-        - econ_2_label
-        - econ_3_code
-        - econ_3_label
-        - approved
-        - modified
-        - executed
-        - admin_1_code
-        - admin_2_code
-        - func_1_code
-        - func_2_code
-        - finsrc_1_code
-        - finsrc_2_code
-        - exp_type_code
-        - econ_1_code
-        - econ_2_code
-      skip_rows: [1]
     - url: ./data/credito_presupuestal_detalle_2012.csv
-      headers: *csv_headers
-      skip_rows: [1]
     - url: ./data/credito_presupuestal_detalle_2013.csv
-      headers: *csv_headers
-      skip_rows: [1]
     - url: ./data/credito_presupuestal_detalle_2014.csv
-      headers: *csv_headers
-      skip_rows: [1]
     - url: ./data/credito_presupuestal_detalle_2015.csv
-      headers: *csv_headers
-      skip_rows: [1]
     - url: ./data/credito_presupuestal_detalle_2016.csv
-      headers: *csv_headers
-      skip_rows: [1]
     - url: ./data/credito_presupuestal_detalle_2017.csv
-      headers: *csv_headers
-      skip_rows: [1]
     - url: ./data/credito_presupuestal_detalle_2018.csv
-      headers: *csv_headers
-      skip_rows: [1]
     - url: ./data/credito_presupuestal_detalle_2019.csv
-      headers: *csv_headers
-      skip_rows: [1]
 
 fields:
 
 # Fiscal year
-- header: year
+- header: AÑO
   title: Año
   options: {}
   columnType: date:fiscal-year
 
 # Administrative Classification
-- header: admin_1_code
-  title: Inciso ID
-  options: {}
-  columnType: administrative-classification:generic:level1:code
-
-- header: admin_1_label
+- header: ORG_NOMBRE
   title: Inciso
   options: {}
   columnType: administrative-classification:generic:level1:label
 
-- header: admin_2_code
-  title: Unidad Ejecutora ID
-  options: {}
-  columnType: administrative-classification:generic:level2:code
-
-- header: admin_2_label
+- header: UE_NOMBRE
   title: Unidad Ejecutora
   options: {}
   columnType: administrative-classification:generic:level2:label
 
-# Functional Classification
-- header: func_1_code
-  title: Área Programática ID
-  options: {}
-  columnType: functional-classification:generic:level1:code
-
-- header: func_1_label
+- header: AP_NOMBRE
   title: Área Programática
   options: {}
   columnType: functional-classification:generic:level1:label
 
-- header: func_2_code
-  title: Fun Programa ID
-  options: {}
-  columnType: functional-classification:generic:level2:code
-
-- header: func_2_label
+- header: PROGRAMA_NOMBRE
   title: Fun Programa
   options: {}
   columnType: functional-classification:generic:level2:label
 
 # Activity
-- header: activ_program_code
+- header: PROYECTO_ID
   title: Programa ID
   options: {}
   columnType: activity:generic:program:code
 
-- header: activ_program_label
+- header: PROYECTO_NOMBRE
   title: Programa
   options: {}
   columnType: activity:generic:program:label
 
-- header: activ_subprogram_code
-  title: Subprograma ID
-  options: {}
-  columnType: activity:generic:subprogram:code
 
-- header: activ_subprogram_label
-  title: Subprograma
-  options: {}
-  columnType: activity:generic:subprogram:label
-
-- header: activ_prj_code
-  title: Proyecto ID
-  options: {}
-  columnType: activity:generic:project:code
-
-- header: activ_prj_label
-  title: Proyecto
-  options: {}
-  columnType: activity:generic:project:label
-
-# Financial Source
-- header: finsrc_1_code
-  title: Financiamiento ID
-  options: {}
-  columnType: fin-source:generic:level1:code
-
-- header: finsrc_1_label
+- header: FINANC_NOMBRE
   title: Financiamiento
   options: {}
   columnType: fin-source:generic:level1:label
 
-- header: finsrc_2_code
-  title: Fuente de Financiamiento ID
-  options: {}
-  columnType: fin-source:generic:level2:code
-
-- header: finsrc_2_label
+- header: FUENTE_FINANC_NOMBRE
   title: Fuente de Financiamiento
   options: {}
   columnType: fin-source:generic:level2:label
 
-# Other
-- header: exp_type_code
-  title: Tipo de Gasto ID
-  options: {}
-  columnType: expenditure-type:code
-
-- header: exp_type_label
+- header: TIPO_GASTO_NOMBRE
   title: Tipo de Gasto
   options: {}
   columnType: expenditure-type:label
 
-# Economic Classification
-- header: econ_1_code
-  title: Grupo ID
-  options: {}
-  columnType: economic-classification:generic:level1:code
-
-- header: econ_1_label
+- header: GRUPO_NOMBRE
   title: Grupo
   options: {}
   columnType: economic-classification:generic:level1:label
 
-- header: econ_2_code
-  title: Subgrupo ID
-  options: {}
-  columnType: economic-classification:generic:level2:code
-
-- header: econ_2_label
+- header: SUBGRUPO_NOMBRE
   title: Subgrupo
   options: {}
   columnType: economic-classification:generic:level2:label
 
-- header: econ_3_code
+- header: ODGYAUX_ID
   title: Objeto del gasto ID
   options: {}
   columnType: economic-classification:generic:level3:code
 
-- header: econ_3_label
+- header: ODGYAUX_NOMBRE
   title: Objeto del gasto
   options: {}
   columnType: economic-classification:generic:level3:label
@@ -240,7 +107,50 @@ fields:
     currency: UYU
   columnType: value
 
-deduplicate: yes
+# Classification codes
+- header: ORG_ID
+  title: Inciso ID
+  options: {}
+  columnType: administrative-classification:generic:level1:code
 
-# postprocessing:
-# - processor: processors/missing-columns
+- header: UE_ID
+  title: Unidad Ejecutora ID
+  options: {}
+  columnType: administrative-classification:generic:level2:code
+
+- header: AP_ID
+  title: Área Programática ID
+  options: {}
+  columnType: functional-classification:generic:level1:code
+
+- header: PROGRAMA_ID
+  title: Fun Programa ID
+  options: {}
+  columnType: functional-classification:generic:level2:code
+
+- header: FINANC_ID
+  title: Financiamiento ID
+  options: {}
+  columnType: fin-source:generic:level1:code
+
+- header: FUENTE_FINANC_ID
+  title: Fuente de Financiamiento ID
+  options: {}
+  columnType: fin-source:generic:level2:code
+
+- header: TIPO_GASTO_ID
+  title: Tipo de Gasto ID
+  options: {}
+  columnType: expenditure-type:code
+
+- header: GRUPO_ID
+  title: Grupo ID
+  options: {}
+  columnType: economic-classification:generic:level1:code
+
+- header: SUBGRUPO_ID
+  title: Subgrupo ID
+  options: {}
+  columnType: economic-classification:generic:level2:code
+
+deduplicate: yes
