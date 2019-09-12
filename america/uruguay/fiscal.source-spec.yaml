@@ -92,22 +92,6 @@ fields:
   options: {}
   columnType: economic-classification:generic:level3:label
 
-# Measures
-- header: approved
-  title: "Crédito apertura"
-  options:
-    currency: UYU
-  columnType: value
-- header: modified
-  title: "Crédito vigente"
-  options:
-    currency: UYU
-  columnType: value
-- header: executed
-  title: "Ejecutado"
-  options:
-    currency: UYU
-  columnType: value
 
 # Classification codes
 - header: ORG_ID
@@ -155,4 +139,26 @@ fields:
   options: {}
   columnType: economic-classification:generic:level2:code
 
-deduplicate: yes
+# Measures
+- header: MONTO_APROBADO
+  title: Crédito apertura
+  options:
+    currency: UYU
+    phase: approved
+  columnType: value
+
+- header: MONTO_VIGENTE
+  title: Crédito vigente
+  options:
+    currency: UYU
+    phase: modified
+  columnType: value
+
+- header: MONTO_EJECUTADO
+  title: Ejecutado
+  options:
+    currency: UYU
+    phase: executed
+  columnType: value
+
+  deduplicate: yes
