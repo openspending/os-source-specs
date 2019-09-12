@@ -161,4 +161,4 @@ fields:
     phase: executed
   columnType: value
 
-  deduplicate: yes
+deduplicate: yes
