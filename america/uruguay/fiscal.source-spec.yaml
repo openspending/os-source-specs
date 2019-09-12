@@ -17,7 +17,9 @@ sources:
 fields:
 
 # Fiscal year
-- header: AÑO
+- header: ANO
+  aliases:
+    - "A\xD1O"
   title: Año
   options: {}
   columnType: date:fiscal-year
