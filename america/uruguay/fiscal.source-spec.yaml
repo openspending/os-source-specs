@@ -1,7 +1,7 @@
 title: "Presupuesto de Uruguay"
 private: False
 owner-id: 667df60aa07c34260eae9b55b2778712
-revision: 1
+revision: 2
 description: "Montos asignados y ejecutados desde el 2011 en adelante. Los datos se presentan en un archivo para cada año fiscal, con apertura por inciso, unidad ejecutora, área programática, programa, proyecto, fuente de financiamiento, grupo, subgrupo y objeto del gasto."
 
 sources:
