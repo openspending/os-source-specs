@@ -117,12 +117,12 @@ fields:
 - header: FINANC_ID
   title: Financiamiento ID
   options: {}
-  columnType: fin-source:generic:level2:code
+  columnType: fin-source:generic:level1:code
 
 - header: FUENTE_FINANC_ID
   title: Fuente de Financiamiento ID
   options: {}
-  columnType: fin-source:generic:level1:code
+  columnType: fin-source:generic:level2:code
 
 - header: TIPO_GASTO_ID
   title: Tipo de Gasto ID
