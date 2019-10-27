@@ -1,4 +1,5 @@
 #encoding: utf8
+from decimal import Decimal
 from datetime import datetime
 from datapackage_pipelines.wrapper import ingest, spew
 
@@ -8,7 +9,7 @@ columns = params.get('columns')
 
 def fix_amount(v):
     v = v.replace(',', '.')
-    return float(v) * 1000000
+    return Decimal(v) * 1000000
 
 
 def process_resources(_res_iter):
