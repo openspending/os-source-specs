@@ -364,4 +364,4 @@ postprocessing:
       - credito_comprometido
       - credito_devengado
       - credito_pagado
-- processor: obra-actividad
+- processor: processors/obra-actividad
