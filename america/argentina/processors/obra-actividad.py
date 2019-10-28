@@ -20,7 +20,7 @@ def process_resources(_res_iter):
 def process_datapackage(datapackage):
     fields = [f 
               for f in datapackage['resources'][0]['schema']['fields']
-              if f['osType'] != 'activity:generic:subproject:label']
+              if f.get('osType') != 'activity:generic:subproject:label']
     fields.append(dict(
         name='obra_actividad',
         title='obra_actividad',
