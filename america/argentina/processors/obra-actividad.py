@@ -21,12 +21,6 @@ def process_datapackage(datapackage):
     fields = [f 
               for f in datapackage['resources'][0]['schema']['fields']
               if f['name'] not in ('obra_id', 'actividad_id')]
-    fields.append(dict(
-        name='obra_actividad',
-        title='obra_actividad',
-        osType='activity:generic:subproject:type',
-        type='string'
-    ))
     datapackage['resources'][0]['schema']['fields'] = fields
     return datapackage
 

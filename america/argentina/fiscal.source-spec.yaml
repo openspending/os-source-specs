@@ -194,6 +194,11 @@ fields:
   options: {}
   columnType: activity:generic:project:code
 
+- header: obra_actividad
+  title: "obra_actividad"
+  options: {}
+  columnType: activity:generic:subproject:kind
+
 - header: actividad_id
   title: "actividad_id"
   options: {}
