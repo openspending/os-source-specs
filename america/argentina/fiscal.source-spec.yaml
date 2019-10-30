@@ -202,7 +202,7 @@ fields:
 - header: actividad_id
   title: "actividad_id"
   options: {}
-  columnType: activity:generic:subproject:label
+  columnType: unknown:string
 
 - header: actividad_desc
   title: "actividad_desc"
@@ -212,7 +212,7 @@ fields:
 - header: obra_id
   title: "obra_id"
   options: {}
-  columnType: activity:generic:subproject:label
+  columnType: unknown:string
 
 # - header: obra_desc
 #   title: "obra_desc"

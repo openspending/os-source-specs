@@ -12,8 +12,6 @@ def process_resources(_res_iter):
         def process_rows(_rows):
             for row in _rows:
                 row['obra_actividad'] = 'obra' if row['obra_id'] else ('actividad' if row['actividad_id'] else None)
-                del row['obra_id']
-                del row['actividad_id']
                 yield row
         yield process_rows(rows)
 
