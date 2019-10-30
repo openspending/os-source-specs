@@ -15,12 +15,4 @@ def process_resources(_res_iter):
                 yield row
         yield process_rows(rows)
 
-def process_datapackage(datapackage):
-    fields = [f 
-              for f in datapackage['resources'][0]['schema']['fields']
-              if f['name'] not in ('obra_id', 'actividad_id')]
-    datapackage['resources'][0]['schema']['fields'] = fields
-    return datapackage
-
-spew(process_datapackage(datapackage), 
-     process_resources(res_iter))
+spew(datapackage, process_resources(res_iter))
