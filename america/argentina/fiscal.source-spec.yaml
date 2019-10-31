@@ -13,7 +13,7 @@ keywords:
   - "Budget"
 private: False
 owner-id: 6018ab87076187018fc29c94a68a3cd2
-revision: 1
+revision: 2
 
 sources:
   - url: https://www.presupuestoabierto.gob.ar/datasets/2019/credito-mensual-2019.zip
