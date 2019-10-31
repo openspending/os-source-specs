@@ -20,6 +20,7 @@ sources:
   - url: https://raw.githubusercontent.com/akariv/argentina-budget-data/master/credito-mensual-2019.zip
     compression: zip
     format: csv
+    http_timeout: 30
     headers:
       - impacto_presupuestario_anio
       - impacto_presupuestario_mes
