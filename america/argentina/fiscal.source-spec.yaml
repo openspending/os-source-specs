@@ -16,7 +16,8 @@ owner-id: 6018ab87076187018fc29c94a68a3cd2
 revision: 2
 
 sources:
-  - url: https://www.presupuestoabierto.gob.ar/datasets/2019/credito-mensual-2019.zip
+  # - url: https://www.presupuestoabierto.gob.ar/datasets/2019/credito-mensual-2019.zip
+  - url: https://raw.githubusercontent.com/akariv/argentina-budget-data/master/credito-mensual-2019.zip
     compression: zip
     format: csv
     headers:
