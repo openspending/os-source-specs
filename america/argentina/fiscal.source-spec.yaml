@@ -85,11 +85,11 @@ fields:
 #     format: "%Y"
 #   columnType: date:generic
 
-- header: impacto_presupuestario_mes
-  title: "impacto_presupuestario_mes"
-  options:
-    format: "%m"
-  columnType: date:generic
+# - header: impacto_presupuestario_mes
+#   title: "impacto_presupuestario_mes"
+#   options:
+#     format: "%m"
+#   columnType: unknown:string
 
 - header: ejercicio_presupuestario
   title: "ejercicio_presupuestario"
@@ -372,3 +372,20 @@ postprocessing:
       - credito_devengado
       - credito_pagado
 - processor: processors/obra-actividad
+- processor: processors/fix-ids
+  parameters:
+    fields:
+      - 
+        - jurisdiccion_id
+        - subjurisdiccion_id
+        - entidad_id
+        - servicio_id
+      -
+        - finalidad_id
+        - funcion_id
+      - 
+        - inciso_id
+        - principal_id
+        - parcial_id
+        - subparcial_id
+        
