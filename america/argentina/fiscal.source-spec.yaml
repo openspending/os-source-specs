@@ -79,22 +79,22 @@ sources:
 
 fields:
 
-# - header: impacto_presupuestario_anio
-#   title: "impacto_presupuestario_anio"
-#   options:
-#     format: "%Y"
-#   columnType: date:generic
-
-# - header: impacto_presupuestario_mes
-#   title: "impacto_presupuestario_mes"
-#   options:
-#     format: "%m"
-#   columnType: unknown:string
-
-- header: ejercicio_presupuestario
-  title: "ejercicio_presupuestario"
-  options: {}
+- header: impacto_presupuestario_anio
+  title: "impacto_presupuestario_anio"
+  options:
+    format: "%Y"
   columnType: date:fiscal-year
+
+- header: impacto_presupuestario_mes
+  title: "impacto_presupuestario_mes"
+  options:
+    format: "%m"
+  columnType: date:fiscal-month
+
+# - header: ejercicio_presupuestario
+#   title: "ejercicio_presupuestario"
+#   options: {}
+#   columnType: date:fiscal-year
 
 # - header: sector_id
 #   title: "sector_id"
