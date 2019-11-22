@@ -81,14 +81,10 @@ fields:
 
 - header: impacto_presupuestario_anio
   title: "impacto_presupuestario_anio"
-  options:
-    format: "%Y"
   columnType: date:fiscal-year
 
 - header: impacto_presupuestario_mes
   title: "impacto_presupuestario_mes"
-  options:
-    format: "%m"
   columnType: date:fiscal-month
 
 # - header: ejercicio_presupuestario
