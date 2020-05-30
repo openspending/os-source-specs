@@ -29,7 +29,9 @@ sources:
 - encoding: windows-1252
   url: cuenta_publica_2018_gf_ecd_epe.csv.gz
 - encoding: windows-1252
-  url: pef_ac01_avance_4t_2019.csv.gz
+  url: cuenta_publica_2019_gf_ecd_epe.csv.gz
+- encoding: windows-1252
+  url: pef_ac01_avance_1t_2020.csv.gz
 fields:
 # Fiscal year
 - header: CICLO
