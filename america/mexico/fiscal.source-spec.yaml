@@ -31,7 +31,7 @@ sources:
 - encoding: windows-1252
   url: cuenta_publica_2019_gf_ecd_epe.csv.gz
 - encoding: windows-1252
-  url: pef_ac01_avance_1t_2020.csv.gz
+  url: https://www.transparenciapresupuestaria.gob.mx/work/models/PTP/DatosAbiertos/Bases_de_datos_presupuesto/CSV/pef_ac01_avance_2t_2020.csv
 fields:
 # Fiscal year
 - header: CICLO
